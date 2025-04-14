@@ -1,0 +1,11 @@
+{
+  "name": "Blockchain Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8545, 3000],
+  "postCreateCommand": "npm install -g truffle@5.11.5 ganache@7.9.1 web3@1.10.0",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "/bin/bash"
+  }
+}
